@@ -1,0 +1,9 @@
+.sgn-google-form .md-form.input-group > .form-control{
+  width: auto !important;
+}
+.sgn-google-form .md-form.input-group > .input-group-append > button{
+  border-top-right-radius: 5px;
+}
+.sgn-google-form .md-form.input-group.active > .input-group-append > button{
+  border-top-right-radius: 2px;
+}

@@ -1,0 +1,94 @@
+/** INPUTS **/
+.sgn-google-form .md-form.form-sm > .prefix,
+.sgn-google-form .md-form.form-sm > .suffix{
+  height: 24px;
+  width: 24px;
+  font-size: 1.5rem;
+  padding: 0px;
+  margin: .25rem 0 0 .25rem;
+}
+.sgn-google-form .md-form.form-sm > .suffix{
+  right: .25rem;
+}
+.sgn-google-form .md-form.form-sm > .form-control{
+  height: 32px;
+  padding: 0 0px 0 0px;
+}
+.sgn-google-form .md-form.form-sm > .prefix ~ .form-control{
+  margin-left: 2rem; /*((prefix width + prefix margin-left+margin-right) + (prefix padding-left+padding-right) + 0.8px)*/
+  width: calc(100% - (2rem + 0px + (0px + .25rem + 0px))); /* (100% - (input margin-left + input padding-left + (prefix/suffix-padding-left + prefix/suffix-margin-left/right + prefix/suffix-width))) */
+}
+.sgn-google-form .md-form.form-sm > .suffix ~ .form-control{
+  width: calc(100% - (2rem + 0px + (0px + .25rem + 24px))); /* (100% - (input margin-left + input padding-left + (prefix/suffix-padding-left + prefix/suffix-margin-left/right + prefix/suffix-width))) */
+}
+.sgn-google-form .md-form.form-sm > label:not(.active):not(.edited){
+  margin-left: 2rem; /*((prefix width + prefix margin-left+margin-right) + (prefix padding-left+padding-right)) - (padding-left / 2)*/
+  padding: 0;
+  top: .2rem;
+  font-size: 1rem !important;
+}
+.sgn-google-form .md-form.form-sm > .prefix ~ label:not(.active):not(.edited){
+  padding: 0;
+  padding-left:.5rem;
+  margin-left: 2rem; /*(((prefix width + prefix margin-left+margin-right) + (prefix padding-left+padding-right)) + (prefix+suffix border-left/right) - 0.8px) -> (((34px + .4rem+0px) + (4px+4px)) + (1px+1px) - 0.8px)*/
+  width: calc(100% - ((2rem + 0px + (0px + 0rem + 0px)) - 0.8px)); /* (100% - ((label margin-left + prefix/suffix border-left/right + (prefix/suffix-padding-left + prefix/suffix-margin-left/right + prefix/suffix-width)) - 0.8px)) */
+}
+.sgn-google-form .md-form.form-sm > .suffix ~ label:not(.active):not(.edited){
+  width: calc(100% - ((2rem + 0px + (0px + .25rem + 24px)) - 0.8px)); /* (100% - ((label margin-left + prefix/suffix border-left/right + (prefix/suffix-padding-left + prefix/suffix-margin-left/right + prefix/suffix-width)) - 0.8px)) */
+}
+.sgn-google-form .md-form.form-sm > label.active,
+.sgn-google-form .md-form.form-sm > label.edited{
+  transform: scale(.8) translateY(-20px) translateX(-10px);
+}
+.sgn-google-form .md-form.form-sm > label.active{
+  color: #1a73e8;
+}
+.sgn-google-form .md-form.form-sm > label.active,
+.sgn-google-form .md-form.form-sm > label.edited{
+  font-size: 1rem;
+}
+.sgn-google-form .md-form.form-sm > .prefix + label.active,
+.sgn-google-form .md-form.form-sm > .prefix + label.edited {
+  transform: scale(.8) translateY(-24px) translateX(-9px);
+}
+.sgn-google-form .md-form.form-sm > .icon{
+  transform: scale(.7);
+  top: -5px !important;
+  right: -6px;
+}
+/* WITH BORDERS */
+.sgn-google-form.with-borders .md-form.form-sm > .prefix,
+.sgn-google-form.with-borders .md-form.form-sm > .suffix{
+  margin: .25rem 0 0 .4rem;
+}
+.sgn-google-form.with-borders .md-form.form-sm > .form-control{
+  height: 32px;
+  padding: 0 0px 0 0px;
+}
+.sgn-google-form.with-borders .md-form.form-sm > .prefix ~ .form-control{
+  margin-left: 2rem;
+}
+.sgn-google-form.with-borders .md-form.form-sm > .prefix ~ .form-control{
+  width: calc(100% - (34px + 0px)); /* (100% - (input margin-left + input padding-left+right)) */
+}
+.sgn-google-form.with-borders .md-form.form-sm > .suffix ~ .form-control{
+  width: calc(100% - (30px + 0px + (8px + .4rem + 24px))); /* (100% - (input margin-left + (input padding-left+right) + (prefix/suffix-padding-left + prefix/suffix-margin-left/right + prefix/suffix-width))) */
+}
+.sgn-google-form.with-borders .md-form.form-sm > label{
+  margin-left: 2.5rem; /*((prefix width + prefix margin-left+margin-right) + (prefix padding-left+padding-right)) - (padding-left / 2)*/
+  top: .4rem;
+  font-size: .8rem !important;
+  padding: 0 8px 0 8px;
+}
+.sgn-google-form.with-borders .md-form.form-sm > label.active{
+  transform: scale(.8) translateY(-20px) translateX(-8px);
+  color: #1a73e8;
+}
+.sgn-google-form.with-borders .md-form.form-sm > .prefix + label.active {
+  transform: scale(.8) translateY(-20px) translateX(-8px);
+}
+.sgn-google-form.with-borders .md-form.form-sm > .icon{
+  transform: scale(.7);
+  top: -4px !important;
+  right: -2px;
+}

@@ -1,0 +1,115 @@
+/** INPUTS **/
+.sgn-google-form .md-form.form-md > .prefix,
+.sgn-google-form .md-form.form-md > .suffix{
+  height: 34px;
+  width: 34px;
+  padding: 0px;
+  margin: .5rem 0 0 .5rem;
+}
+.sgn-google-form .md-form.form-md > .suffix{
+  margin-right: .0rem;
+  right: .3rem;
+}
+.sgn-google-form .md-form.form-md > .prefix ~ .form-control{
+  margin-left: 2.675rem; /*((prefix width + prefix margin-left+margin-right) + (prefix padding-left+padding-right) + 0.8px)*/
+}
+.sgn-google-form .md-form.form-md > .form-control{
+  height: 46px;
+  padding: 0 0px 0 0px;
+  font-size: 1.3rem;
+}
+.sgn-google-form .md-form.form-md > .prefix ~ .form-control{
+  padding-left: .5rem;
+  width: calc(100% - (2.675rem + 0px + (0px + 0rem + 0px))); /* (100% - (input margin-left + input padding-left + (prefix/suffix-padding-left + prefix/suffix-margin-left/right + prefix/suffix-width))) */
+}
+.sgn-google-form .md-form.form-md > .suffix ~ .form-control{
+  width: calc(100% - (2.675rem + 0px + (4px + .5rem + 34px))); /* (100% - (input margin-left + input padding-left + (prefix/suffix-padding-left + prefix/suffix-margin-left/right + prefix/suffix-width))) */
+}
+.sgn-google-form .md-form.form-md > label{
+  margin-left: 2.675rem;
+}
+.sgn-google-form .md-form.form-md > label:not(.active):not(.edited){
+  margin-left: 42px; /*((prefix width + prefix margin-left+margin-right) + (prefix padding-left+padding-right)) - (padding-left / 2)*/
+  padding: 0;
+  top: .5rem;
+  font-size: 1.1rem;
+}
+.sgn-google-form .md-form.form-md > .prefix ~ label:not(.active):not(.edited){
+  padding: 0;
+  padding-left:1rem;
+  margin-left: 2.675rem; /*(((prefix width + prefix margin-left+margin-right) + (prefix padding-left+padding-right)) + (prefix+suffix border-left/right) - 0.8px) -> (((34px + .4rem+0px) + (4px+4px)) + (1px+1px) - 0.8px)*/
+  top: .5rem;
+  width: calc(100% - ((2.675rem + 0px + (0px + 0rem + 0px)) - 0px)); /* (100% - ((label margin-left + prefix/suffix border-left/right + (prefix/suffix-padding-left + prefix/suffix-margin-left/right + prefix/suffix-width)) - 0.8px)) */
+}
+.sgn-google-form .md-form.form-md > .suffix ~ label:not(.active):not(.edited){
+  width: calc(100% - ((2.675rem + 0px + (4px + .4rem + 34px)) - 0px)); /* (100% - ((label margin-left + prefix/suffix border-left/right + (prefix/suffix-padding-left + prefix/suffix-margin-left/right + prefix/suffix-width)) - 0.8px)) */
+}
+.sgn-google-form .md-form.form-md > label.active,
+.sgn-google-form .md-form.form-md > label.edited{
+  transform: scale(.85) translateY(-22px) translateX(-10px);
+}
+.sgn-google-form .md-form.form-md > label.active{
+  color: #1a73e8;
+}
+.sgn-google-form .md-form.form-md > label.active,
+.sgn-google-form .md-form.form-md > label.edited{
+  font-size: 1.1rem;
+}
+.sgn-google-form .md-form.form-md > .prefix + label.active,
+.sgn-google-form .md-form.form-md > .prefix + label.edited {
+  transform: scale(.9) translateY(-22px) translateX(-0px);
+}
+.sgn-google-form .md-form.form-md > .icon{
+  transform: scale(1);
+  top: .6rem !important;
+  right: -.8rem;
+  padding: 0;
+  margin: 0
+}
+/* WITH BORDERS */
+.sgn-google-form.with-borders .md-form.form-md > .form-control{
+  height: 46px;
+  padding: 0 0px 0 0px;
+}
+.sgn-google-form.with-borders .md-form.form-md > .prefix,
+.sgn-google-form.with-borders .md-form.form-md > .suffix{
+  margin: .4rem 0 0 .5rem;
+}
+.sgn-google-form.with-borders .md-form.form-md > .suffix{
+  margin-right: .0rem;
+  right: .3rem;
+}
+.sgn-google-form.with-borders .md-form.form-md > .prefix ~ .form-control{
+  margin-left: 3.025rem; /*((prefix width + prefix margin-left+margin-right) + (prefix padding-left+padding-right)) -> ((34px + .4rem+0px) + (4px+4px))*/
+  padding-left: .4rem;
+}
+.sgn-google-form.with-borders .md-form.form-md > .prefix ~ .form-control{
+  width: calc(100% - (3.025rem + .4rem + (0px + 0rem + 0px))); /* (100% - (input margin-left + input padding-left+right + (prefix/suffix-padding-left + prefix/suffix-margin-left/right + prefix/suffix-width))) */
+}
+.sgn-google-form.with-borders .md-form.form-md > .suffix ~ .form-control{
+  width: calc(100% - (3.025rem + .4rem + (4px + .4rem + 34px))); /* (100% - (input margin-left + input padding-left+right + (prefix/suffix-padding-left + prefix/suffix-margin-left/right + prefix/suffix-width))) */
+}
+.sgn-google-form.with-borders .md-form.form-md > label{
+  margin-left: 60px; /*((prefix width + prefix margin-left+margin-right) + (prefix padding-left+padding-right)) - (padding-left / 2) -> ((34px + .4rem+0px) + (4px+4px)) - (8px / 2)*/
+  top: .5rem;
+  font-size: 1.1rem !important;
+  padding: 0 8px 0 8px;
+}
+.sgn-google-form.with-borders .md-form.form-md > .prefix ~ label:not(.active){
+  padding: 0;
+  padding-left:1rem;
+  margin-left: 3.1rem; /*(((prefix width + prefix margin-left+margin-right) + (prefix padding-left+padding-right)) + (prefix+suffix border-left/right) - 0.8px) -> (((34px + .4rem+0px) + (4px+4px)) + (1px+1px) - 0.8px)*/
+  width: calc(100% - ((3.1rem + 0rem + (4px + .4rem + 34px)) - 0.8px)); /* (100% - ((label margin-left + label padding-left + (prefix/suffix-padding-left + prefix/suffix-margin-left/right + prefix/suffix-width)) - 0.8px)) */
+}
+.sgn-google-form.with-borders .md-form.form-md > label.active{
+  transform: scale(.7) translateY(-34px) translateX(-12px);
+  color: #1a73e8;
+}
+.sgn-google-form.with-borders .md-form.form-md > .prefix + label.active {
+  transform: scale(.9) translateY(-26px) translateX(-11px);
+}
+.sgn-google-form.with-borders .md-form.form-md > .icon{
+  transform: scale(1);
+  top: 2px !important;
+  right: -7px;
+}

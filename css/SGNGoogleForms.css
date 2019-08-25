@@ -1,0 +1,115 @@
+@import url('checkbox.css');
+@import url('md-checkbox.css');
+@import url('radiobox.css');
+@import url('selectbox.css');
+@import url('fileinput.css');
+@import url('common.css');
+@import url('sizes/small.css');
+@import url('sizes/medium.css');
+@import url('sizes/large.css');
+@import url('utilities.css');
+@import url('validation.css');
+@import url('themes.css');
+sgni-feedbacks{
+  display: none;
+}
+.sgn-google-form .border{
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+.sgn-google-form .md-form,
+.sgn-google-form .border{
+  border: 1px solid #dadce0;
+  border-radius: 5px;
+  padding: 14px 8px 14px 8px;
+  padding: 0 !important;
+}
+.sgn-google-form .md-form > .prefix{
+  margin: 1.2rem 0 0 0;
+  top: 0 !important;
+}
+.sgn-google-form .md-form > .suffix{
+  margin: 1.2rem .5rem 0 0;
+  top: 0 !important;
+}
+.sgn-google-form .md-form > .prefix,
+.sgn-google-form .md-form > .suffix{
+  cursor: text;
+}
+.sgn-google-form .md-form > label{
+  margin-bottom: 0;
+  margin-left: 11px;
+  top: .7rem;
+  font-size: 1rem;
+  padding: 0 8px 0 8px;
+  background-color: #fff;
+  transform-origin: left;
+  pointer-events: none;
+  z-index: 1;
+}
+.sgn-google-form .md-form > label.active,
+.sgn-google-form .md-form > label.edited{
+  transform: scale(.75) translateY(-42px);
+  font-size: 1rem;
+  line-height: 1;
+}
+.sgn-google-form .md-form > label.active,
+.sgn-google-form .md-form.active > .prefix ~ .custom-file > label{
+  color: #1a73e8;
+}
+.sgn-google-form .md-form > .prefix + label.active{
+  transform: scale(.8) translateX(-5px) translateY(-32px);
+}
+.sgn-google-form .md-form > .form-control{
+  border: none !important;
+  outline: none !important;
+  z-index: 0;
+  margin: 0 0 0 8px;
+  padding: 0;
+  height: 48px;
+  color: #202124;
+}
+.sgn-google-form .md-form > .form-control:focus{
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.sgn-google-form .md-form.active{
+  border: 2px solid #1a73e8;
+}
+.sgn-google-form .md-form.readonly,
+.sgn-google-form .md-form.readonly > .form-control,
+.sgn-google-form .md-form.readonly > .prefix,
+.sgn-google-form .md-form.readonly > label {
+  border-color: #999 !important;
+  color: #999 !important;
+}
+.sgn-google-form .md-form.disabled,
+.sgn-google-form .md-form.disabled > .form-control,
+.sgn-google-form .md-form.disabled > .prefix,
+.sgn-google-form .md-form.disabled > label {
+  border-color: #aaa !important;
+  color: #aaa !important;
+}
+.sgn-google-form .md-form.disabled > .form-control{
+  background-color: transparent;
+}
+/*** BORDERS ***/
+/*.sgn-google-form.with-borders .md-form{
+  padding: 0 !important;
+}*/
+.sgn-google-form.with-borders .md-form > .prefix ~ .form-control{
+  border-left: 1px solid #dadce0 !important;
+}
+.sgn-google-form.with-borders .md-form > .suffix ~ .form-control {
+  border-right: 1px solid #dadce0 !important;
+}
+.sgn-google-form.with-borders .md-form > .suffix.icon ~ .form-control {
+  border-right: 0 !important;
+}
+.sgn-google-form.with-borders .md-form > .sgni-feedback{
+  border-top: 1px solid #dadce0;
+}
+.sgn-google-form.with-borders .md-form > .help-block{
+  border-top: 1px solid #dadce0;
+}

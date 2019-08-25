@@ -1,0 +1,34 @@
+.sgn-google-form .md-form.sgngf-checkbox > label {
+	  font-size: 1.1rem !important;
+    transform: translateY(-27px) translateX(-2px);
+}
+.sgn-google-form .md-form.sgngf-checkbox > label:not(.active){
+	padding-left: .3rem;
+	padding-right: .3rem;
+}
+.sgn-google-form .md-form.sgngf-checkbox.active > label{
+	transform: scale(.75) translateY(-36px) translateX(-8px);
+}
+.sgn-google-form .md-form.sgngf-checkbox .form-check{
+	margin-left: .7rem;
+	margin-right: .7rem;
+}
+.sgn-google-form .md-form.sgngf-checkbox .form-check:first-of-type{
+	margin-top: .7rem;
+}
+.sgn-google-form .md-form.sgngf-checkbox .form-check:last-of-type{
+	margin-bottom: .7rem;
+}
+.sgn-google-form .md-form.sgngf-checkbox .form-check > .form-check-label{
+	color: #202124;
+	top: 0;
+}
+
+
+.sgn-google-form .md-form.sgngf-checkbox.no-control-label:not(.bordered){
+	border: none;
+}
+.sgn-google-form .md-form.sgngf-checkbox.no-control-label:not(.bordered) > .form-check{
+	margin-top: 0;
+	padding: 0;
+}

@@ -1,0 +1,61 @@
+/*** COLORS ***/
+/* INVALID */
+.sgn-google-form .md-form.invalid,
+.sgn-google-form.with-borders .md-form.invalid,
+.sgn-google-form.with-borders .md-form.with-invalid-feedback.invalid > .form-control,
+.sgn-google-form.with-borders .md-form.with-invalid-feedback.invalid > .sgni-feedback{
+  border-color: #d93025 !important;
+  color: #202124;
+}
+.sgn-google-form .md-form.invalid > label,
+.sgn-google-form .md-form.invalid > .prefix,
+.sgn-google-form .md-form.invalid > .suffix,
+.sgn-google-form.with-borders .md-form.with-invalid-feedback.invalid > label.active,
+.sgn-google-form.with-borders .md-form.with-invalid-feedback.invalid > .sgni-feedback{
+  color: #d93025 !important;
+  /*color: #757575;*/
+}
+.sgn-google-form .md-form.with-invalid-feedback.invalid > .help-block:not(.with-bg){
+  border-color: #d93025;
+  color: #d93025;
+}
+.sgn-google-form .md-form.with-invalid-feedback.invalid > .help-block.with-bg{
+  border-color: #d93025;
+  color: #d93025;
+  background-color: #FBEAE9;
+}
+
+/* VALID */
+.sgn-google-form .md-form.valid,
+.sgn-google-form.with-borders .md-form.valid,
+.sgn-google-form.with-borders .md-form.valid > .form-control,
+.sgn-google-form.with-borders .md-form.with-valid-feedback.valid > .sgni-feedback{
+  border-color: green !important;
+  color: #202124;
+}
+.sgn-google-form .md-form.valid > label,
+.sgn-google-form .md-form.valid > .prefix,
+.sgn-google-form .md-form.valid > .suffix,
+.sgn-google-form.with-borders .md-form.with-valid-feedback.valid > label.active,
+.sgn-google-form.with-borders .md-form.with-valid-feedback.valid > .sgni-feedback{
+  color: #008600 !important;
+}
+
+.sgn-google-form .md-form.with-valid-feedback.valid > .help-block:not(.with-bg){
+  border-color: #008000;
+  color: #008000;
+}
+.sgn-google-form .md-form.with-valid-feedback.valid > .help-block.with-bg{
+  border-color: #008000;
+  color: #008000;
+  background-color: #E5F2E5;
+}
+
+/*** WITH-BORDERS ***/
+.sgn-google-form.with-borders .md-form.with-invalid-feedback.invalid > .form-control{
+  border-right: 1px solid !important;
+  color: #202124;
+}
+.sgn-google-form.with-borders .md-form.with-invalid-feedback.invalid > .sgni-feedback{
+  border-top: 1px solid !important;
+}

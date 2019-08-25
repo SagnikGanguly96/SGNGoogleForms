@@ -1,0 +1,69 @@
+.sgn-google-form .md-form > .custom-file{
+  height: auto;
+}
+.sgn-google-form .md-form > .custom-file > .custom-file-input {
+  border: none !important;
+  outline: none !important;
+  z-index: 0;
+  margin: 0 0 0 8px;
+  padding: 0;
+  height: 48px;
+  color: #202124;
+}
+.sgn-google-form .md-form > .custom-file > .custom-file-label{
+  border: none !important;
+  outline: none !important;
+  z-index: 0;
+  margin: 0 0 0 8px;
+  padding: .8rem 0 .8rem 0rem;
+  color: #202124;
+  top: 0rem;
+  right: unset;
+  height: 48px;
+  box-shadow: none !important;
+  margin-left: 2.675rem;
+}
+.sgn-google-form .md-form > .custom-file > .custom-file-label:after{
+  padding-top: .8rem;
+  padding-bottom: .8rem;
+  height: auto;
+  cursor: pointer;
+}
+.sgn-google-form .md-form > .custom-file > .custom-file-input:focus,
+.sgn-google-form .md-form > .custom-file > .custom-file-label:focus{
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.sgn-google-form .md-form.readonly > .custom-file > .custom-file-input,
+.sgn-google-form .md-form.readonly > .custom-file > .custom-file-label {
+  border-color: #999 !important;
+  color: #999 !important;
+}
+.sgn-google-form .md-form.disabled > .custom-file > .custom-file-input,
+.sgn-google-form .md-form.disabled > .custom-file > .custom-file-label {
+  border-color: #aaa !important;
+  color: #aaa !important;
+}
+.sgn-google-form .md-form.readonly > .custom-file > .custom-file-input{
+  background-color: transparent;
+}
+.sgn-google-form .md-form.active > .custom-file > label:after{
+  display: none;
+}
+
+
+.sgn-google-form .md-form.form-md:not(.active):not(.edited) > .prefix ~ .custom-file > label:not(.edited) {
+  padding-left: 1rem;
+  display: block !important;
+  width: calc(100% - ((2.675rem + 0px + (0px + 0rem + 0px)) - 0px));
+}
+
+
+.sgn-google-form .md-form.active > .prefix ~ .custom-file > label,
+.sgn-google-form .md-form > .prefix ~ .custom-file > label.edited {
+  padding: 0 .5rem 0 .5rem;
+  width: auto !important;
+  height: auto;
+  transform: scale(.9) translateY(-15px) translateX(0px);
+}

@@ -1,0 +1,17 @@
+.sgn-google-form .md-form > .mdb-select.select-wrapper{
+  margin-left: 3.175rem;
+  padding: 0;
+}
+.sgn-google-form .md-form > .mdb-select.select-wrapper > .caret{
+  margin-top: .2rem;
+}
+.sgn-google-form .md-form > .mdb-select.select-wrapper > .select-dropdown{
+  margin: 0;
+  margin-top: .1rem;
+  border: 0;
+  min-height: 48px;
+  color: #202124;
+}
+.sgn-google-form .md-form > .mdb-select.select-wrapper > .dropdown-content{
+  margin-top: 1rem;
+}

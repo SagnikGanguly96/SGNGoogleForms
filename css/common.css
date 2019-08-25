@@ -1,0 +1,25 @@
+/*** COMMON ***/
+.sgn-google-form .md-form .help-block{
+  color: gray;
+  padding-left: .5rem;
+  width: 100%;
+  display: block;
+  cursor: text;
+  border-radius: 0 0 4px 4px;
+}
+.sgn-google-form .md-form .help-block.with-bg{
+  background-color: #eee;
+}
+.sgn-google-form .secondary-border-top
+.sgn-google-form .secondary-border-right,
+.sgn-google-form .secondary-border-bottom,
+.sgn-google-form .secondary-border-left{
+  border-style: solid !important;
+  border-color: #dadce0 !important;
+}
+.sgn-google-form .secondary-border-top
+.sgn-google-form .secondary-border-right,
+.sgn-google-form .secondary-border-bottom,
+.sgn-google-form .secondary-border-left{
+  border-top-width: 1px !important;
+}
