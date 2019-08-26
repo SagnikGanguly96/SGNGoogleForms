@@ -9,6 +9,6 @@
   ],
   "author": "Sagnik Ganguly",
   "dependencies": {
-	  "botkit": "jonchurch/botkit#multi-hears"
+	  "jquery": "jquery/jquery"
   }
 }
