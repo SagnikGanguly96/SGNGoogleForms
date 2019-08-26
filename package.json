@@ -2,14 +2,13 @@
   "name": "sgn-google-forms",
   "version": "1.0.0",
   "description": "Create form in HTML which will look like the fields currently used by Google.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "sgn",
     "google",
     "form"
   ],
-  "author": "Sagnik Ganguly"
+  "author": "Sagnik Ganguly",
+  "dependencies": {
+	  "botkit": "jonchurch/botkit#multi-hears"
+  }
 }
