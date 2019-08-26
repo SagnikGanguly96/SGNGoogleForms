@@ -13,7 +13,7 @@ Installation
 <script src="localhost/inc/SGNGoogleForms/js/SGNGoogleForms.compressed.js"></script>
 ```
 
-#Dependencies
+# Dependencies
 1.) [jQuery 3.2.1+](https://jquery.com/download/) ([Download](https://code.jquery.com/jquery-3.4.1.min.js))
 
 2.) [Bootstrap v4.3.1+](https://getbootstrap.com/docs/4.3/getting-started/download/) ([Download](https://github.com/twbs/bootstrap/releases/download/v4.3.1/bootstrap-4.3.1-dist.zip))
