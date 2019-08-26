@@ -3,7 +3,7 @@ Create forms in HTML which will look like the fields looks in Google.
 
 Installation
 ===
-1.) Download the appropriate release from [here](https://github.com/SagnikGanguly96/SGNGoogleForms/releases/latest).
+1.) Download the appropriate release from [here](https://github.com/SagnikGanguly96/SGNGoogleForms/releases) or download the [latest version](https://github.com/SagnikGanguly96/SGNGoogleForms/releases/latest).
 
 2.) Extract the files in a location of your choice (i.e. localhost/inc/SGNGoogleForms/).
 
