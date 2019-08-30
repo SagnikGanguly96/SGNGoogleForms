@@ -1,5 +1,9 @@
 # SGNGoogleForms
 Create forms in HTML which will look like the fields looks in Google.
+[![GitHub issues](https://img.shields.io/github/issues/SagnikGanguly96/SGNGoogleForms)](https://github.com/SagnikGanguly96/SGNGoogleForms/issues)
+[![GitHub forks](https://img.shields.io/github/forks/SagnikGanguly96/SGNGoogleForms)](https://github.com/SagnikGanguly96/SGNGoogleForms/network)
+[![GitHub stars](https://img.shields.io/github/stars/SagnikGanguly96/SGNGoogleForms)](https://github.com/SagnikGanguly96/SGNGoogleForms/stargazers)
+[![GitHub license](https://img.shields.io/github/license/SagnikGanguly96/SGNGoogleForms)](https://github.com/SagnikGanguly96/SGNGoogleForms)
 
 Installation
 ===
