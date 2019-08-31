@@ -3,6 +3,7 @@
 - [Installation](#installation)
 - [Syntax](#syntax)
 	- [Text/Password/Number/Tel Input](#textpasswordnumbertel-input)
+	
     	- [Simple](#simple)
     	- [With Label](#with-label)
     	- [With Label & Prefix](#with-label--prefix)
