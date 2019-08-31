@@ -12,7 +12,7 @@ Installation
 2.) Extract the files in a location of your choice (i.e. localhost/inc/SGNGoogleForms/).
 
 3.) Now add the following lines between `<head>` & `</head>` tags:
-```
+```html
 <link rel="stylesheet" href="localhost/inc/SGNGoogleForms/css/SGNGoogleForms.compressed.css">
 <script src="localhost/inc/SGNGoogleForms/js/SGNGoogleForms.compressed.js"></script>
 ```
