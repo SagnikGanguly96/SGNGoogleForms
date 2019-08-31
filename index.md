@@ -1,9 +1,13 @@
 # Contents
+- level 1 item
+  - level 2 item
+  - level 2 item
+    - level 3 item
+    - level 3 item
 - [Introduction](#sgngoogleforms)
 - [Installation](#installation)
 - [Syntax](#syntax)
 	- [Text/Password/Number/Tel Input](#textpasswordnumbertel-input)
-	
     	- [Simple](#simple)
     	- [With Label](#with-label)
     	- [With Label & Prefix](#with-label--prefix)
