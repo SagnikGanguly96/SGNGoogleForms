@@ -50,7 +50,7 @@ Create forms in HTML which will look like the fields looks in Google.
 ```
 
 # Syntax
-**The tags must follow the layout listed below for each type of fields. The `validation (sgngfv), input-group, prefix, suffix, label, help-block` elements can be removed or added but must follow the layout flow.**
+**The tags must follow the layout flow listed below for each type of fields. The `validation (sgngfv), input-group, prefix, suffix, label, help-block` elements can be removed or added but must follow the sequence of the tags.**
 
 ### Text/Password/Number/Tel Input
 * ##### Simple
