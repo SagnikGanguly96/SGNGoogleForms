@@ -43,7 +43,7 @@ Create forms in HTML which will look like the fields looks in Google.
 2.) Extract the files in a location of your choice (i.e. localhost/inc/SGNGoogleForms/).
 
 3.) Now add the following lines between `<head>` & `</head>` tags:
-```
+```html
 <link rel="stylesheet" href="localhost/inc/SGNGoogleForms/css/SGNGoogleForms.compressed.css">
 <script src="localhost/inc/SGNGoogleForms/js/SGNGoogleForms.compressed.js"></script>
 ```
@@ -54,7 +54,7 @@ Create forms in HTML which will look like the fields looks in Google.
 ### Text/Password/Number/Tel Input
 * ##### Simple
 
-```
+```html
 <form class="sgn-google-form">
 	<div class="md-form form-md mt-0">
 		<input type="text" class="form-control" id="usr" placeholder="example" required="true" name="username" minlength="6" maxlength="24">
@@ -65,7 +65,7 @@ Create forms in HTML which will look like the fields looks in Google.
 
 * ##### With Label
 
-```
+```html
 <form class="sgn-google-form">
 	<div class="md-form form-md mt-0">
 		<label class="control-label" for="usr">Username</label>
@@ -77,7 +77,7 @@ Create forms in HTML which will look like the fields looks in Google.
 
 * ##### With Label & Prefix
 
-```
+```html
 <form class="sgn-google-form">
 	<div class="md-form form-md mt-0">
 		<i class="fas fa-user prefix"></i>
@@ -90,7 +90,7 @@ Create forms in HTML which will look like the fields looks in Google.
 
 * ##### With Label, Prefix & Suffix
 
-```
+```html
 <form class="sgn-google-form">
 	<div class="md-form form-md mt-0">
 		<i class="fas fa-key prefix"></i>
@@ -104,7 +104,7 @@ Create forms in HTML which will look like the fields looks in Google.
 
 * ##### With Label, Prefix, Suffix & Help Block (transparent)
 
-```
+```html
 <form class="sgn-google-form">
 	<div class="md-form form-md mt-0">
 		<i class="fas fa-key prefix"></i>
@@ -119,7 +119,7 @@ Create forms in HTML which will look like the fields looks in Google.
 
 * ##### With Label, Prefix, Suffix & Help Block (with background)
 
-```
+```html
 <form class="sgn-google-form">
 	<div class="md-form form-md mt-0">
 		<i class="fas fa-key prefix"></i>
@@ -134,7 +134,7 @@ Create forms in HTML which will look like the fields looks in Google.
 
 * ##### With Label, Prefix, Suffix, Help Block & Validation
 
-```
+```html
 <form class="sgn-google-form">
 	<div class="md-form form-md mt-0">
 		<i class="fas fa-key prefix"></i>
@@ -150,7 +150,7 @@ Create forms in HTML which will look like the fields looks in Google.
 
 * ##### With Label, Prefix, Suffix, Help Block, Validation & Input Group
 
-```
+```html
 <form class="sgn-google-form">
 	<div class="md-form form-md mt-0">
 		<i class="fas fa-key prefix"></i>
@@ -170,9 +170,8 @@ Create forms in HTML which will look like the fields looks in Google.
 
 
 ### Select Dropdown
-
-```
 Place the code below to the end of the page to initialize select dropdown
+```js
 <script>
 // Material Select Initialization
 $(document).ready(function() {
@@ -184,7 +183,7 @@ $(document).ready(function() {
 
 * ##### Simple
 
-```
+```html
 <div class="md-form form-md mt-0 text-capitalize">
 	<select class="mdb-select colorful-select dropdown-primary" id="prefix" name="prefix" required="true">
 		<option value="Master">Master</option>
@@ -198,7 +197,7 @@ $(document).ready(function() {
 
 * ##### With Label
 
-```
+```html
 <div class="md-form form-md mt-0 text-capitalize">
 	<label class="control-label edited" for="prefix">Prefix</label>
 	<select class="mdb-select colorful-select dropdown-primary" id="prefix" name="prefix" required="true">
@@ -213,7 +212,7 @@ $(document).ready(function() {
 
 * ##### With Label & Prefix
 
-```
+```html
 <div class="md-form form-md mt-0 text-capitalize">
 	<i class="fas fa-user prefix"></i>
 	<label class="control-label edited" for="prefix">Prefix</label>
@@ -229,7 +228,7 @@ $(document).ready(function() {
 
 * ##### With Label, Prefix & Suffix
 
-```
+```html
 <div class="md-form form-md mt-0 text-capitalize">
 	<i class="fas fa-user prefix"></i>
 	<i class="fas fa-user suffix"></i>
@@ -246,7 +245,7 @@ $(document).ready(function() {
 
 * ##### With Label, Prefix, Suffix & Help Block
 
-```
+```html
 <div class="md-form form-md mt-0 text-capitalize">
 	<i class="fas fa-user prefix"></i>
 	<i class="fas fa-user suffix"></i>
@@ -264,7 +263,7 @@ $(document).ready(function() {
 
 * ##### With Label, Prefix, Suffix, Help Block & Validation
 
-```
+```html
 <div class="md-form form-md mt-0 text-capitalize">
 	<i class="fas fa-user prefix"></i>
 	<i class="fas fa-user suffix"></i>
@@ -285,7 +284,7 @@ $(document).ready(function() {
 
 * ##### Simple
 
-```
+```html
 <div class="md-form form-md mt-0 sgngf-radiobox">
 	<label class="control-label edited">Gender</label>
 	<div class="form-check">
@@ -302,7 +301,7 @@ $(document).ready(function() {
 
 * ##### With Control Label
 
-```
+```html
 <div class="md-form form-md mt-0 sgngf-radiobox">
 	<label class="control-label edited">Gender</label>
 	<div class="form-check">
@@ -319,7 +318,7 @@ $(document).ready(function() {
 
 * ##### With Control Label & Help Block (transparent)
 
-```
+```html
 <div class="md-form form-md mt-0 sgngf-radiobox">
 	<label class="control-label edited">Gender</label>
 	<div class="form-check">
@@ -337,7 +336,7 @@ $(document).ready(function() {
 
 * ##### With Control Label & Help Block (with background)
 
-```
+```html
 <div class="md-form form-md mt-0 sgngf-radiobox">
 	<label class="control-label edited">Gender</label>
 	<div class="form-check">
@@ -357,7 +356,7 @@ $(document).ready(function() {
 
 * ##### Simple
 
-```
+```html
 <div class="md-form form-md mt-0 sgngf-checkbox">
 	<label class="control-label edited">Gender</label>
 	<div class="form-check">
@@ -374,7 +373,7 @@ $(document).ready(function() {
 
 * ##### With Control Label
 
-```
+```html
 <div class="md-form form-md mt-0 sgngf-checkbox">
 	<label class="control-label edited">Gender</label>
 	<div class="form-check">
@@ -391,7 +390,7 @@ $(document).ready(function() {
 
 * ##### With Control Label & Help Block (transparent)
 
-```
+```html
 <div class="md-form form-md mt-0 sgngf-checkbox">
 	<label class="control-label edited">Gender</label>
 	<div class="form-check">
@@ -409,7 +408,7 @@ $(document).ready(function() {
 
 * ##### With Control Label & Help Block (with background)
 
-```
+```html
 <div class="md-form form-md mt-0 sgngf-checkbox">
 	<label class="control-label edited">Gender</label>
 	<div class="form-check">
@@ -430,7 +429,7 @@ $(document).ready(function() {
 Add *datepicker* class to any text input and follow the syntax of [Text/Password/Number/Tel Input](#textpasswordnumbertel-input)
 And place the code below to the end of the page
 
-```
+```js
 <script>
 	// Data Picker Initialization
 	$('.datepicker').pickadate();
