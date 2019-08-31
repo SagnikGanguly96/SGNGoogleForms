@@ -52,7 +52,7 @@ Create forms in HTML which will look like the fields looks in Google.
 **The tags must follow the layout listed below for each type of fields. The `validation (sgngfv), input-group, prefix, suffix, label, help-block` elements can be removed or added but must follow the layout flow.**
 
 ### Text/Password/Number/Tel Input
-* #### Simple
+* ##### Simple
 
 ```
 <form class="sgn-google-form">
@@ -63,7 +63,7 @@ Create forms in HTML which will look like the fields looks in Google.
 ```
 
 
-* #### With Label
+* ##### With Label
 
 ```
 <form class="sgn-google-form">
@@ -75,7 +75,7 @@ Create forms in HTML which will look like the fields looks in Google.
 ```
 
 
-* #### With Label & Prefix
+* ##### With Label & Prefix
 
 ```
 <form class="sgn-google-form">
@@ -88,7 +88,7 @@ Create forms in HTML which will look like the fields looks in Google.
 ```
 
 
-* #### With Label, Prefix & Suffix
+* ##### With Label, Prefix & Suffix
 
 ```
 <form class="sgn-google-form">
@@ -102,7 +102,7 @@ Create forms in HTML which will look like the fields looks in Google.
 ```
 
 
-* #### With Label, Prefix, Suffix & Help Block (transparent)
+* ##### With Label, Prefix, Suffix & Help Block (transparent)
 
 ```
 <form class="sgn-google-form">
@@ -117,7 +117,7 @@ Create forms in HTML which will look like the fields looks in Google.
 ```
 
 
-* #### With Label, Prefix, Suffix & Help Block (with background)
+* ##### With Label, Prefix, Suffix & Help Block (with background)
 
 ```
 <form class="sgn-google-form">
@@ -132,7 +132,7 @@ Create forms in HTML which will look like the fields looks in Google.
 ```
 
 
-* #### With Label, Prefix, Suffix, Help Block & Validation
+* ##### With Label, Prefix, Suffix, Help Block & Validation
 
 ```
 <form class="sgn-google-form">
@@ -148,7 +148,7 @@ Create forms in HTML which will look like the fields looks in Google.
 ```
 
 
-* #### With Label, Prefix, Suffix, Help Block, Validation & Input Group
+* ##### With Label, Prefix, Suffix, Help Block, Validation & Input Group
 
 ```
 <form class="sgn-google-form">
@@ -182,7 +182,7 @@ $(document).ready(function() {
 ```
 
 
-* #### Simple
+* ##### Simple
 
 ```
 <div class="md-form form-md mt-0 text-capitalize">
@@ -196,7 +196,7 @@ $(document).ready(function() {
 ```
 
 
-* #### With Label
+* ##### With Label
 
 ```
 <div class="md-form form-md mt-0 text-capitalize">
@@ -211,7 +211,7 @@ $(document).ready(function() {
 ```
 
 
-* #### With Label & Prefix
+* ##### With Label & Prefix
 
 ```
 <div class="md-form form-md mt-0 text-capitalize">
@@ -227,7 +227,7 @@ $(document).ready(function() {
 ```
 
 
-* #### With Label, Prefix & Suffix
+* ##### With Label, Prefix & Suffix
 
 ```
 <div class="md-form form-md mt-0 text-capitalize">
@@ -244,7 +244,7 @@ $(document).ready(function() {
 ```
 
 
-* #### With Label, Prefix, Suffix & Help Block
+* ##### With Label, Prefix, Suffix & Help Block
 
 ```
 <div class="md-form form-md mt-0 text-capitalize">
@@ -262,7 +262,7 @@ $(document).ready(function() {
 ```
 
 
-* #### With Label, Prefix, Suffix, Help Block & Validation
+* ##### With Label, Prefix, Suffix, Help Block & Validation
 
 ```
 <div class="md-form form-md mt-0 text-capitalize">
@@ -283,7 +283,7 @@ $(document).ready(function() {
 
 ### Radio Buttons
 
-* #### Simple
+* ##### Simple
 
 ```
 <div class="md-form form-md mt-0 sgngf-radiobox">
@@ -300,7 +300,7 @@ $(document).ready(function() {
 ```
 
 
-* #### With Control Label
+* ##### With Control Label
 
 ```
 <div class="md-form form-md mt-0 sgngf-radiobox">
@@ -317,7 +317,7 @@ $(document).ready(function() {
 ```
 
 
-* #### With Control Label & Help Block (transparent)
+* ##### With Control Label & Help Block (transparent)
 
 ```
 <div class="md-form form-md mt-0 sgngf-radiobox">
@@ -335,7 +335,7 @@ $(document).ready(function() {
 ```
 
 
-* #### With Control Label & Help Block (with background)
+* ##### With Control Label & Help Block (with background)
 
 ```
 <div class="md-form form-md mt-0 sgngf-radiobox">
@@ -355,7 +355,7 @@ $(document).ready(function() {
 
 ### Checkboxes
 
-* #### Simple
+* ##### Simple
 
 ```
 <div class="md-form form-md mt-0 sgngf-checkbox">
@@ -372,7 +372,7 @@ $(document).ready(function() {
 ```
 
 
-* #### With Control Label
+* ##### With Control Label
 
 ```
 <div class="md-form form-md mt-0 sgngf-checkbox">
@@ -389,7 +389,7 @@ $(document).ready(function() {
 ```
 
 
-* #### With Control Label & Help Block (transparent)
+* ##### With Control Label & Help Block (transparent)
 
 ```
 <div class="md-form form-md mt-0 sgngf-checkbox">
@@ -407,7 +407,7 @@ $(document).ready(function() {
 ```
 
 
-* #### With Control Label & Help Block (with background)
+* ##### With Control Label & Help Block (with background)
 
 ```
 <div class="md-form form-md mt-0 sgngf-checkbox">
