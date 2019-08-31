@@ -171,7 +171,7 @@ Create forms in HTML which will look like the fields looks in Google.
 
 ### Select Dropdown
 Place the code below to the end of the page to initialize select dropdown
-```js
+```html
 <script>
 // Material Select Initialization
 $(document).ready(function() {
@@ -429,7 +429,7 @@ $(document).ready(function() {
 Add *datepicker* class to any text input and follow the syntax of [Text/Password/Number/Tel Input](#textpasswordnumbertel-input)
 And place the code below to the end of the page
 
-```js
+```html
 <script>
 	// Data Picker Initialization
 	$('.datepicker').pickadate();
