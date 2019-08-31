@@ -16,6 +16,8 @@ Installation
 <link rel="stylesheet" href="localhost/inc/SGNGoogleForms/css/SGNGoogleForms.compressed.css">
 <script src="localhost/inc/SGNGoogleForms/js/SGNGoogleForms.compressed.js"></script>
 ```
+# Documentations
+[Click here](https://sagnikganguly96.github.io/SGNGoogleForms) for documentations.
 
 # Dependencies
 1.) [jQuery 3.2.1+](https://jquery.com/download/) ([Download](https://code.jquery.com/jquery-3.4.1.min.js))
