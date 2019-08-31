@@ -288,12 +288,12 @@ $(document).ready(function() {
 <div class="md-form form-md mt-0 sgngf-radiobox">
 	<label class="control-label edited">Gender</label>
 	<div class="form-check">
-		<input value="Male" id="step3_sex_male" name="step3_sex" checked="checked" type="radio" class="form-check-input">
-		<label class="form-check-label" for="step3_sex_male">Male</label>
+		<input value="Male" id="male" name="sex" checked="checked" type="radio" class="form-check-input">
+		<label class="form-check-label" for="male">Male</label>
 	</div>
 	<div class="form-check">
-		<input value="Female" id="step3_sex_female" name="step3_sex" type="radio" class="form-check-input">
-		<label class="radio form-check-label" for="step3_sex_female">Female</label>
+		<input value="Female" id="female" name="sex" type="radio" class="form-check-input">
+		<label class="radio form-check-label" for="female">Female</label>
 	</div>
 </div>
 ```
@@ -305,12 +305,12 @@ $(document).ready(function() {
 <div class="md-form form-md mt-0 sgngf-radiobox">
 	<label class="control-label edited">Gender</label>
 	<div class="form-check">
-		<input value="Male" id="step3_sex_male" name="step3_sex" checked="checked" type="radio" class="form-check-input">
-		<label class="form-check-label" for="step3_sex_male">Male</label>
+		<input value="Male" id="male" name="sex" checked="checked" type="radio" class="form-check-input">
+		<label class="form-check-label" for="male">Male</label>
 	</div>
 	<div class="form-check">
-		<input value="Female" id="step3_sex_female" name="step3_sex" type="radio" class="form-check-input">
-		<label class="radio form-check-label" for="step3_sex_female">Female</label>
+		<input value="Female" id="female" name="sex" type="radio" class="form-check-input">
+		<label class="radio form-check-label" for="female">Female</label>
 	</div>
 </div>
 ```
@@ -322,12 +322,12 @@ $(document).ready(function() {
 <div class="md-form form-md mt-0 sgngf-radiobox">
 	<label class="control-label edited">Gender</label>
 	<div class="form-check">
-		<input value="Male" id="step3_sex_male" name="step3_sex" checked="checked" type="radio" class="form-check-input">
-		<label class="form-check-label" for="step3_sex_male">Male</label>
+		<input value="Male" id="male" name="sex" checked="checked" type="radio" class="form-check-input">
+		<label class="form-check-label" for="male">Male</label>
 	</div>
 	<div class="form-check">
-		<input value="Female" id="step3_sex_female" name="step3_sex" type="radio" class="form-check-input">
-		<label class="radio form-check-label" for="step3_sex_female">Female</label>
+		<input value="Female" id="female" name="sex" type="radio" class="form-check-input">
+		<label class="radio form-check-label" for="female">Female</label>
 	</div>
 	<span class="help-block">Select your gender</span>
 </div>
@@ -340,12 +340,12 @@ $(document).ready(function() {
 <div class="md-form form-md mt-0 sgngf-radiobox">
 	<label class="control-label edited">Gender</label>
 	<div class="form-check">
-		<input value="Male" id="step3_sex_male" name="step3_sex" checked="checked" type="radio" class="form-check-input">
-		<label class="form-check-label" for="step3_sex_male">Male</label>
+		<input value="Male" id="male" name="sex" checked="checked" type="radio" class="form-check-input">
+		<label class="form-check-label" for="male">Male</label>
 	</div>
 	<div class="form-check">
-		<input value="Female" id="step3_sex_female" name="step3_sex" type="radio" class="form-check-input">
-		<label class="radio form-check-label" for="step3_sex_female">Female</label>
+		<input value="Female" id="female" name="sex" type="radio" class="form-check-input">
+		<label class="radio form-check-label" for="female">Female</label>
 	</div>
 	<span class="help-block with-bg">Select your gender</span>
 </div>
