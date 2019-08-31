@@ -25,6 +25,7 @@ Create forms in HTML which will look like the fields looks in Google.
 	</div>
 </form>
 ```
+
 * With Label
 ```
 <form class="sgn-google-form">
@@ -34,6 +35,7 @@ Create forms in HTML which will look like the fields looks in Google.
 	</div>
 </form>
 ```
+
 * With Label & Prefix
 ```
 <form class="sgn-google-form">
