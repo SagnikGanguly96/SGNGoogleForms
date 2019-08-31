@@ -30,6 +30,7 @@
 	- [With Control Label, Prefix, Suffix & Help Block (Transparent)](#with-control-label---help-block-transparent-1)
 	- [With Control Label, Prefix, Suffix & Help Block (With Background)](#with-control-label---help-block-with-background-1)
   - [Datepicker](#datepicker)
+- [Dependencies](#dependencies)
 
 
 
