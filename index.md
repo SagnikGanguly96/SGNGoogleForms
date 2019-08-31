@@ -14,16 +14,323 @@ Create forms in HTML which will look like the fields looks in Google.
 ```
 
 # Syntax
+**The tags must follow the layout listed below for each type of fields. The `validation (sgngfv), input-group, prefix, suffix, label, help-block` elements can be removed or added but must follow the layout flow.**
+
+### Text/Password/Number/Tel Input
+* Simple
+```
+<form class="sgn-google-form">
+	<div class="md-form form-md mt-0">
+		<input type="text" class="form-control" id="usr" placeholder="example" required="true" name="username" minlength="6" maxlength="24">
+	</div>
+</form>
+```
+* With Label
+```
+<form class="sgn-google-form">
+	<div class="md-form form-md mt-0">
+		<label class="control-label" for="usr">Username</label>
+		<input type="text" class="form-control" id="usr" placeholder="example" required="true" name="username" minlength="6" maxlength="24">
+	</div>
+</form>
+```
+* With Label & Prefix
 ```
 <form class="sgn-google-form">
 	<div class="md-form form-md mt-0">
 		<i class="fas fa-user prefix"></i>
 		<label class="control-label" for="usr">Username</label>
 		<input type="text" class="form-control" id="usr" placeholder="example" required="true" name="username" minlength="6" maxlength="24">
-		<span class="help-block with-bg">Enter Registrar UID</span>
-		<sgngfv empty="Please enter your desired username" length="Username must be between %min% & %max%" invalid="The username is invalid" unavailable="The username %val% is not available" available="Congratulations! The username %val% is available"></sgngfv>
 	</div>
 </form>
+```
+* With Label, Prefix & Suffix
+```
+<form class="sgn-google-form">
+	<div class="md-form form-md mt-0">
+		<i class="fas fa-key prefix"></i>
+		<i class="fas fa-eye-slash suffix"></i>
+		<label class="control-label" for="usr">Password</label>
+		<input type="password" class="form-control" id="pwd" placeholder="example" required="true" name="password" minlength="6" maxlength="24">
+	</div>
+</form>
+```
+* With Label, Prefix, Suffix & Help Block (transparent)
+```
+<form class="sgn-google-form">
+	<div class="md-form form-md mt-0">
+		<i class="fas fa-key prefix"></i>
+		<i class="fas fa-eye-slash suffix"></i>
+		<label class="control-label" for="usr">Password</label>
+		<input type="password" class="form-control" id="pwd" placeholder="example" required="true" name="password" minlength="6" maxlength="24">
+		<span class="help-block">Enter your password</span>
+	</div>
+</form>
+```
+* With Label, Prefix, Suffix & Help Block (with background)
+```
+<form class="sgn-google-form">
+	<div class="md-form form-md mt-0">
+		<i class="fas fa-key prefix"></i>
+		<i class="fas fa-eye-slash suffix"></i>
+		<label class="control-label" for="usr">Password</label>
+		<input type="password" class="form-control" id="pwd" placeholder="example" required="true" name="password" minlength="6" maxlength="24">
+		<span class="help-block with-bg">Enter your password</span>
+	</div>
+</form>
+```
+* With Label, Prefix, Suffix, Help Block & Validation
+```
+<form class="sgn-google-form">
+	<div class="md-form form-md mt-0">
+		<i class="fas fa-key prefix"></i>
+		<i class="fas fa-eye-slash suffix"></i>
+		<label class="control-label" for="usr">Password</label>
+		<input type="password" class="form-control" id="pwd" placeholder="example" required="true" name="password" minlength="6" maxlength="24">
+		<span class="help-block with-bg">Enter your desired password</span>
+		<sgngfv empty="Please choose your password" length="Password must be between %min% & %max%" invalid="The password is invalid"></sgngfv>
+	</div>
+</form>
+```
+* With Label, Prefix, Suffix, Help Block, Validation & Input Group
+```
+<form class="sgn-google-form">
+	<div class="md-form form-md mt-0">
+		<i class="fas fa-key prefix"></i>
+		<i class="fas fa-eye-slash suffix"></i>
+		<label class="control-label" for="usr">Password</label>
+		<input type="password" class="form-control" id="pwd" placeholder="example" required="true" name="password" minlength="6" maxlength="24">
+		<div class="input-group-append">
+			<button class="btn btn-md btn-default m-0 px-3 waves-effect waves-light" type="button" id="generatePwdBtn">
+				<i class="fas fa-sync-alt"></i>Generate
+			</button>
+		</div>
+		<span class="help-block with-bg">Enter your desired password</span>
+		<sgngfv empty="Please choose your password" length="Password must be between %min% & %max%" invalid="The password is invalid"></sgngfv>
+	</div>
+</form>
+```
+
+### Select Dropdown
+```
+Place the code below to the end of the page to initialize select dropdown
+<script>
+// Material Select Initialization
+$(document).ready(function() {
+	$('.mdb-select').materialSelect();
+});
+</script>
+```
+* Simple
+```
+<div class="md-form form-md mt-0 text-capitalize">
+	<select class="mdb-select colorful-select dropdown-primary" id="prefix" name="prefix" required="true">
+		<option value="Master">Master</option>
+		<option value="Miss">Miss</option>
+		<option value="Mr" selected="selected">Mr(Mister)</option>
+		<option value="Mrs">Mrs(Mistress)</option>
+	</select>
+</div>
+```
+* With Label
+```
+<div class="md-form form-md mt-0 text-capitalize">
+	<label class="control-label edited" for="prefix">Prefix</label>
+	<select class="mdb-select colorful-select dropdown-primary" id="prefix" name="prefix" required="true">
+		<option value="Master">Master</option>
+		<option value="Miss">Miss</option>
+		<option value="Mr" selected="selected">Mr(Mister)</option>
+		<option value="Mrs">Mrs(Mistress)</option>
+	</select>
+</div>
+```
+* With Label & Prefix
+```
+<div class="md-form form-md mt-0 text-capitalize">
+	<i class="fas fa-user prefix"></i>
+	<label class="control-label edited" for="prefix">Prefix</label>
+	<select class="mdb-select colorful-select dropdown-primary" id="prefix" name="prefix" required="true">
+		<option value="Master">Master</option>
+		<option value="Miss">Miss</option>
+		<option value="Mr" selected="selected">Mr(Mister)</option>
+		<option value="Mrs">Mrs(Mistress)</option>
+	</select>
+</div>
+```
+* With Label, Prefix & Suffix
+```
+<div class="md-form form-md mt-0 text-capitalize">
+	<i class="fas fa-user prefix"></i>
+	<i class="fas fa-user suffix"></i>
+	<label class="control-label edited" for="prefix">Prefix</label>
+	<select class="mdb-select colorful-select dropdown-primary" id="prefix" name="prefix" required="true">
+		<option value="Master">Master</option>
+		<option value="Miss">Miss</option>
+		<option value="Mr" selected="selected">Mr(Mister)</option>
+		<option value="Mrs">Mrs(Mistress)</option>
+	</select>
+</div>
+```
+* With Label, Prefix, Suffix & Help Block
+```
+<div class="md-form form-md mt-0 text-capitalize">
+	<i class="fas fa-user prefix"></i>
+	<i class="fas fa-user suffix"></i>
+	<label class="control-label edited" for="prefix">Prefix</label>
+	<select class="mdb-select colorful-select dropdown-primary" id="prefix" name="prefix" required="true">
+		<option value="Master">Master</option>
+		<option value="Miss">Miss</option>
+		<option value="Mr" selected="selected">Mr(Mister)</option>
+		<option value="Mrs">Mrs(Mistress)</option>
+	</select>
+	<span class="help-block with-bg">Choose your prefix</span>
+</div>
+```
+* With Label, Prefix, Suffix, Help Block & Validation
+```
+<div class="md-form form-md mt-0 text-capitalize">
+	<i class="fas fa-user prefix"></i>
+	<i class="fas fa-user suffix"></i>
+	<label class="control-label edited" for="prefix">Prefix</label>
+	<select class="mdb-select colorful-select dropdown-primary" id="prefix" name="prefix" required="true">
+		<option value="Master">Master</option>
+		<option value="Miss">Miss</option>
+		<option value="Mr" selected="selected">Mr(Mister)</option>
+		<option value="Mrs">Mrs(Mistress)</option>
+	</select>
+	<span class="help-block with-bg">Choose your prefix</span>
+	<sgngfv empty="Please choose your prefix"></sgngfv>
+</div>
+```
+
+### Radio Buttons
+* Simple
+```
+<div class="md-form form-md mt-0 sgngf-radiobox">
+	<label class="control-label edited">Gender</label>
+	<div class="form-check">
+		<input value="Male" id="step3_sex_male" name="step3_sex" checked="checked" type="radio" class="form-check-input">
+		<label class="form-check-label" for="step3_sex_male">Male</label>
+	</div>
+	<div class="form-check">
+		<input value="Female" id="step3_sex_female" name="step3_sex" type="radio" class="form-check-input">
+		<label class="radio form-check-label" for="step3_sex_female">Female</label>
+	</div>
+</div>
+```
+* With Control Label
+```
+<div class="md-form form-md mt-0 sgngf-radiobox">
+	<label class="control-label edited">Gender</label>
+	<div class="form-check">
+		<input value="Male" id="step3_sex_male" name="step3_sex" checked="checked" type="radio" class="form-check-input">
+		<label class="form-check-label" for="step3_sex_male">Male</label>
+	</div>
+	<div class="form-check">
+		<input value="Female" id="step3_sex_female" name="step3_sex" type="radio" class="form-check-input">
+		<label class="radio form-check-label" for="step3_sex_female">Female</label>
+	</div>
+</div>
+```
+* With Control Label & Help Block (transparent)
+```
+<div class="md-form form-md mt-0 sgngf-radiobox">
+	<label class="control-label edited">Gender</label>
+	<div class="form-check">
+		<input value="Male" id="step3_sex_male" name="step3_sex" checked="checked" type="radio" class="form-check-input">
+		<label class="form-check-label" for="step3_sex_male">Male</label>
+	</div>
+	<div class="form-check">
+		<input value="Female" id="step3_sex_female" name="step3_sex" type="radio" class="form-check-input">
+		<label class="radio form-check-label" for="step3_sex_female">Female</label>
+	</div>
+	<span class="help-block">Select your gender</span>
+</div>
+```
+* With Control Label & Help Block (with background)
+```
+<div class="md-form form-md mt-0 sgngf-radiobox">
+	<label class="control-label edited">Gender</label>
+	<div class="form-check">
+		<input value="Male" id="step3_sex_male" name="step3_sex" checked="checked" type="radio" class="form-check-input">
+		<label class="form-check-label" for="step3_sex_male">Male</label>
+	</div>
+	<div class="form-check">
+		<input value="Female" id="step3_sex_female" name="step3_sex" type="radio" class="form-check-input">
+		<label class="radio form-check-label" for="step3_sex_female">Female</label>
+	</div>
+	<span class="help-block with-bg">Select your gender</span>
+</div>
+```
+
+### Checkboxes
+* Simple
+```
+<div class="md-form form-md mt-0 sgngf-checkbox">
+	<label class="control-label edited">Gender</label>
+	<div class="form-check">
+		<input value="1" id="terms" name="declarations" checked="checked" type="checkbox" class="form-check-input">
+		<label class="form-check-label" for="terms">1</label>
+	</div>
+	<div class="form-check">
+		<input value="1" id="privacy" name="declarations" type="checkbox" class="form-check-input">
+		<label class="checkbox form-check-label" for="privacy">1</label>
+	</div>
+</div>
+```
+* With Control Label
+```
+<div class="md-form form-md mt-0 sgngf-checkbox">
+	<label class="control-label edited">Gender</label>
+	<div class="form-check">
+		<input value="1" id="terms" name="declarations" checked="checked" type="checkbox" class="form-check-input">
+		<label class="form-check-label" for="terms">1</label>
+	</div>
+	<div class="form-check">
+		<input value="1" id="privacy" name="declarations" type="checkbox" class="form-check-input">
+		<label class="checkbox form-check-label" for="privacy">1</label>
+	</div>
+</div>
+```
+* With Control Label & Help Block (transparent)
+```
+<div class="md-form form-md mt-0 sgngf-checkbox">
+	<label class="control-label edited">Gender</label>
+	<div class="form-check">
+		<input value="1" id="terms" name="declarations" checked="checked" type="checkbox" class="form-check-input">
+		<label class="form-check-label" for="terms">1</label>
+	</div>
+	<div class="form-check">
+		<input value="1" id="privacy" name="declarations" type="checkbox" class="form-check-input">
+		<label class="checkbox form-check-label" for="privacy">1</label>
+	</div>
+	<span class="help-block">Select your gender</span>
+</div>
+```
+* With Control Label & Help Block (with background)
+```
+<div class="md-form form-md mt-0 sgngf-checkbox">
+	<label class="control-label edited">Gender</label>
+	<div class="form-check">
+		<input value="1" id="terms" name="declarations" checked="checked" type="checkbox" class="form-check-input">
+		<label class="form-check-label" for="terms">1</label>
+	</div>
+	<div class="form-check">
+		<input value="1" id="privacy" name="declarations" type="checkbox" class="form-check-input">
+		<label class="checkbox form-check-label" for="privacy">1</label>
+	</div>
+	<span class="help-block with-bg">Select your gender</span>
+</div>
+```
+
+### Datepicker
+```
+Add *datepicker* class to any text input and follow the syntax of [Text/Password/Number/Tel Input](#the-header)
+And place the code below to the end of the page
+<script>
+	// Data Picker Initialization
+	$('.datepicker').pickadate();
+</script>
 ```
 
 # Dependencies
