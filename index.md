@@ -325,7 +325,7 @@ $(document).ready(function() {
 
 ### Datepicker
 ```
-Add *datepicker* class to any text input and follow the syntax of [Text/Password/Number/Tel Input](#the-header)
+Add *datepicker* class to any text input and follow the syntax of [Text/Password/Number/Tel Input](#textpasswordnumbertel-input)
 And place the code below to the end of the page
 <script>
 	// Data Picker Initialization
