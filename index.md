@@ -1,3 +1,13 @@
+# Contents
+- [Introduction](#sgngoogleforms)
+- [Installation](#installation)
+- [Syntax](#syntax)
+  - [Text/Password/Number/Tel Input](#textpasswordnumbertel-input)
+    - [Simple](#simple)
+    - [With Label](#with-label)
+
+
+
 # SGNGoogleForms
 Create forms in HTML which will look like the fields looks in Google.
 
