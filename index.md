@@ -1,22 +1,22 @@
 # Contents
 - level 1 item
-  	- level 2 item
-  	- level 2 item
-    	- level 3 item
-    	- level 3 item
+  - level 2 item
+  - level 2 item
+    - level 3 item
+    - level 3 item
 - [Introduction](#sgngoogleforms)
 - [Installation](#installation)
 - [Syntax](#syntax)
-	- [Text/Password/Number/Tel Input](#textpasswordnumbertel-input)
-    	- [Simple](#simple)
-    	- [With Label](#with-label)
-    	- [With Label & Prefix](#with-label--prefix)
-    	- [With Label, Prefix & Suffix](#with-label-prefix--suffix)
-    	- [With Label, Prefix, Suffix & Help Block (Transparent)](#with-label-prefix-suffix--help-block-transparent)
-    	- [With Label, Prefix, Suffix & Help Block (With Background)](#with-label-prefix-suffix--help-block-with-background)
-    	- [With Label, Prefix, Suffix, Help Block & Validation](#with-label-prefix-suffix-help-block--validation)
-    	- [With Label, Prefix, Suffix, Help Block, Validation & Input Group](#with-label-prefix-suffix-help-block-validation--input-group)
-	- [Select Dropdown](#select-dropdown)
+  - [Text/Password/Number/Tel Input](#textpasswordnumbertel-input)
+	- [Simple](#simple)
+	- [With Label](#with-label)
+	- [With Label & Prefix](#with-label--prefix)
+	- [With Label, Prefix & Suffix](#with-label-prefix--suffix)
+	- [With Label, Prefix, Suffix & Help Block (Transparent)](#with-label-prefix-suffix--help-block-transparent)
+	- [With Label, Prefix, Suffix & Help Block (With Background)](#with-label-prefix-suffix--help-block-with-background)
+	- [With Label, Prefix, Suffix, Help Block & Validation](#with-label-prefix-suffix-help-block--validation)
+	- [With Label, Prefix, Suffix, Help Block, Validation & Input Group](#with-label-prefix-suffix-help-block-validation--input-group)
+  - [Select Dropdown](#select-dropdown)
     	- [Simple](#simple-1)
 		- [With Label](#with-label-1)
 		- [With Label & Prefix](#with-label--prefix-1)
@@ -24,17 +24,17 @@
 		- [With Label, Prefix, Suffix & Help Block (Transparent)](#with-label-prefix-suffix--help-block-transparent-1)
 		- [With Label, Prefix, Suffix & Help Block (With Background)](#with-label-prefix-suffix--help-block-with-background-1)
 		- [With Label, Prefix, Suffix, Help Block & Validation](#with-label-prefix-suffix-help-block--validation-1)
-	- [Radio Buttons](#radio-buttons)
+  - [Radio Buttons](#radio-buttons)
     	- [Simple](#simple-2)
 		- [With Control Label](#with-control-label)
 		- [With Control Label, Prefix, Suffix & Help Block (Transparent)](#with-control-label---help-block-transparent)
 		- [With Control Label, Prefix, Suffix & Help Block (With Background)](#with-control-label---help-block-with-background)
-	- [Checkboxes](#checkboxes)
+  - [Checkboxes](#checkboxes)
     	- [Simple](#simple-3)
 		- [With Control Label](#with-control-label-1)
 		- [With Control Label, Prefix, Suffix & Help Block (Transparent)](#with-control-label---help-block-transparent-1)
 		- [With Control Label, Prefix, Suffix & Help Block (With Background)](#with-control-label---help-block-with-background-1)
-	- [Datepicker](#datepicker)
+  - [Datepicker](#datepicker)
 
 
 
