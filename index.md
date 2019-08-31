@@ -17,7 +17,7 @@ Create forms in HTML which will look like the fields looks in Google.
 **The tags must follow the layout listed below for each type of fields. The `validation (sgngfv), input-group, prefix, suffix, label, help-block` elements can be removed or added but must follow the layout flow.**
 
 ### Text/Password/Number/Tel Input
-Simple
+* Simple
 
 ```
 <form class="sgn-google-form">
@@ -27,7 +27,9 @@ Simple
 </form>
 ```
 
+
 * With Label
+
 ```
 <form class="sgn-google-form">
 	<div class="md-form form-md mt-0">
@@ -37,7 +39,9 @@ Simple
 </form>
 ```
 
+
 * With Label & Prefix
+
 ```
 <form class="sgn-google-form">
 	<div class="md-form form-md mt-0">
@@ -47,7 +51,10 @@ Simple
 	</div>
 </form>
 ```
+
+
 * With Label, Prefix & Suffix
+
 ```
 <form class="sgn-google-form">
 	<div class="md-form form-md mt-0">
@@ -58,7 +65,10 @@ Simple
 	</div>
 </form>
 ```
+
+
 * With Label, Prefix, Suffix & Help Block (transparent)
+
 ```
 <form class="sgn-google-form">
 	<div class="md-form form-md mt-0">
@@ -70,7 +80,10 @@ Simple
 	</div>
 </form>
 ```
+
+
 * With Label, Prefix, Suffix & Help Block (with background)
+
 ```
 <form class="sgn-google-form">
 	<div class="md-form form-md mt-0">
@@ -82,7 +95,10 @@ Simple
 	</div>
 </form>
 ```
+
+
 * With Label, Prefix, Suffix, Help Block & Validation
+
 ```
 <form class="sgn-google-form">
 	<div class="md-form form-md mt-0">
@@ -95,7 +111,10 @@ Simple
 	</div>
 </form>
 ```
+
+
 * With Label, Prefix, Suffix, Help Block, Validation & Input Group
+
 ```
 <form class="sgn-google-form">
 	<div class="md-form form-md mt-0">
@@ -114,7 +133,9 @@ Simple
 </form>
 ```
 
+
 ### Select Dropdown
+
 ```
 Place the code below to the end of the page to initialize select dropdown
 <script>
@@ -124,7 +145,10 @@ $(document).ready(function() {
 });
 </script>
 ```
+
+
 * Simple
+
 ```
 <div class="md-form form-md mt-0 text-capitalize">
 	<select class="mdb-select colorful-select dropdown-primary" id="prefix" name="prefix" required="true">
@@ -135,7 +159,10 @@ $(document).ready(function() {
 	</select>
 </div>
 ```
+
+
 * With Label
+
 ```
 <div class="md-form form-md mt-0 text-capitalize">
 	<label class="control-label edited" for="prefix">Prefix</label>
@@ -147,7 +174,10 @@ $(document).ready(function() {
 	</select>
 </div>
 ```
+
+
 * With Label & Prefix
+
 ```
 <div class="md-form form-md mt-0 text-capitalize">
 	<i class="fas fa-user prefix"></i>
@@ -160,7 +190,10 @@ $(document).ready(function() {
 	</select>
 </div>
 ```
+
+
 * With Label, Prefix & Suffix
+
 ```
 <div class="md-form form-md mt-0 text-capitalize">
 	<i class="fas fa-user prefix"></i>
@@ -174,7 +207,10 @@ $(document).ready(function() {
 	</select>
 </div>
 ```
+
+
 * With Label, Prefix, Suffix & Help Block
+
 ```
 <div class="md-form form-md mt-0 text-capitalize">
 	<i class="fas fa-user prefix"></i>
@@ -189,7 +225,10 @@ $(document).ready(function() {
 	<span class="help-block with-bg">Choose your prefix</span>
 </div>
 ```
+
+
 * With Label, Prefix, Suffix, Help Block & Validation
+
 ```
 <div class="md-form form-md mt-0 text-capitalize">
 	<i class="fas fa-user prefix"></i>
@@ -206,8 +245,11 @@ $(document).ready(function() {
 </div>
 ```
 
+
 ### Radio Buttons
+
 * Simple
+
 ```
 <div class="md-form form-md mt-0 sgngf-radiobox">
 	<label class="control-label edited">Gender</label>
@@ -221,7 +263,10 @@ $(document).ready(function() {
 	</div>
 </div>
 ```
+
+
 * With Control Label
+
 ```
 <div class="md-form form-md mt-0 sgngf-radiobox">
 	<label class="control-label edited">Gender</label>
@@ -235,7 +280,10 @@ $(document).ready(function() {
 	</div>
 </div>
 ```
+
+
 * With Control Label & Help Block (transparent)
+
 ```
 <div class="md-form form-md mt-0 sgngf-radiobox">
 	<label class="control-label edited">Gender</label>
@@ -250,7 +298,10 @@ $(document).ready(function() {
 	<span class="help-block">Select your gender</span>
 </div>
 ```
+
+
 * With Control Label & Help Block (with background)
+
 ```
 <div class="md-form form-md mt-0 sgngf-radiobox">
 	<label class="control-label edited">Gender</label>
@@ -265,9 +316,12 @@ $(document).ready(function() {
 	<span class="help-block with-bg">Select your gender</span>
 </div>
 ```
+
 
 ### Checkboxes
+
 * Simple
+
 ```
 <div class="md-form form-md mt-0 sgngf-checkbox">
 	<label class="control-label edited">Gender</label>
@@ -281,7 +335,10 @@ $(document).ready(function() {
 	</div>
 </div>
 ```
+
+
 * With Control Label
+
 ```
 <div class="md-form form-md mt-0 sgngf-checkbox">
 	<label class="control-label edited">Gender</label>
@@ -295,7 +352,10 @@ $(document).ready(function() {
 	</div>
 </div>
 ```
+
+
 * With Control Label & Help Block (transparent)
+
 ```
 <div class="md-form form-md mt-0 sgngf-checkbox">
 	<label class="control-label edited">Gender</label>
@@ -310,7 +370,10 @@ $(document).ready(function() {
 	<span class="help-block">Select your gender</span>
 </div>
 ```
+
+
 * With Control Label & Help Block (with background)
+
 ```
 <div class="md-form form-md mt-0 sgngf-checkbox">
 	<label class="control-label edited">Gender</label>
@@ -326,7 +389,9 @@ $(document).ready(function() {
 </div>
 ```
 
+
 ### Datepicker
+
 ```
 Add *datepicker* class to any text input and follow the syntax of [Text/Password/Number/Tel Input](#textpasswordnumbertel-input)
 And place the code below to the end of the page
@@ -335,6 +400,7 @@ And place the code below to the end of the page
 	$('.datepicker').pickadate();
 </script>
 ```
+
 
 # Dependencies
 1.) [jQuery 3.2.1+](https://jquery.com/download/) ([Download](https://code.jquery.com/jquery-3.4.1.min.js))
