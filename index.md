@@ -27,7 +27,7 @@ Create forms in HTML which will look like the fields looks in Google.
 **The tags must follow the layout listed below for each type of fields. The `validation (sgngfv), input-group, prefix, suffix, label, help-block` elements can be removed or added but must follow the layout flow.**
 
 ### Text/Password/Number/Tel Input
-* Simple
+#### * Simple
 
 ```
 <form class="sgn-google-form">
