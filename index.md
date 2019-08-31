@@ -18,6 +18,7 @@ Create forms in HTML which will look like the fields looks in Google.
 
 ### Text/Password/Number/Tel Input
 * Simple
+
 ```
 <form class="sgn-google-form">
 	<div class="md-form form-md mt-0">
