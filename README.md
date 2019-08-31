@@ -14,8 +14,8 @@ Installation
 
 3.) Now add the following lines between `<head>` & `</head>` tags:
 ```html
-<link rel="stylesheet" href="localhost/inc/SGNGoogleForms/css/SGNGoogleForms.compressed.css">
-<script src="localhost/inc/SGNGoogleForms/js/SGNGoogleForms.compressed.js"></script>
+<link rel="stylesheet" href="localhost/inc/SGNGoogleForms/css/SGNGoogleForms.css">
+<script src="localhost/inc/SGNGoogleForms/js/SGNGoogleForms.js"></script>
 ```
 # Documentations
 [Click here](https://sagnikganguly96.github.io/SGNGoogleForms) for documentations.
