@@ -22,13 +22,13 @@
   - [Radio Buttons](#radio-buttons)
 	- [Simple](#simple-2)
 	- [With Control Label](#with-control-label)
-	- [With Control Label, Prefix, Suffix & Help Block (Transparent)](#with-control-label---help-block-transparent)
-	- [With Control Label, Prefix, Suffix & Help Block (With Background)](#with-control-label---help-block-with-background)
+	- [With Control Label & Help Block (Transparent)](#with-control-label--help-block-transparent)
+	- [With Control Label & Help Block (With Background)](#with-control-label--help-block-with-background)
   - [Checkboxes](#checkboxes)
 	- [Simple](#simple-3)
 	- [With Control Label](#with-control-label-1)
-	- [With Control Label, Prefix, Suffix & Help Block (Transparent)](#with-control-label---help-block-transparent-1)
-	- [With Control Label, Prefix, Suffix & Help Block (With Background)](#with-control-label---help-block-with-background-1)
+	- [With Control Label & Help Block (Transparent)](#with-control-label--help-block-transparent-1)
+	- [With Control Label & Help Block (With Background)](#with-control-label--help-block-with-background-1)
   - [Datepicker](#datepicker)
 - [Dependencies](#dependencies)
 
@@ -244,7 +244,25 @@ $(document).ready(function() {
 ```
 
 
-* ##### With Label, Prefix, Suffix & Help Block
+* ##### With Label, Prefix, Suffix & Help Block (Transparent)
+
+```html
+<div class="md-form form-md mt-0 text-capitalize">
+	<i class="fas fa-user prefix"></i>
+	<i class="fas fa-user suffix"></i>
+	<label class="control-label edited" for="prefix">Prefix</label>
+	<select class="mdb-select colorful-select dropdown-primary" id="prefix" name="prefix" required="true">
+		<option value="Master">Master</option>
+		<option value="Miss">Miss</option>
+		<option value="Mr" selected="selected">Mr(Mister)</option>
+		<option value="Mrs">Mrs(Mistress)</option>
+	</select>
+	<span class="help-block">Choose your prefix</span>
+</div>
+```
+
+
+* ##### With Label, Prefix, Suffix & Help Block (With Background)
 
 ```html
 <div class="md-form form-md mt-0 text-capitalize">
