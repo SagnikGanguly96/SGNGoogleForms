@@ -29,3 +29,4 @@ Installation
 
 # Changelog
 + Added Textarea support
++ Added SelectBox support
